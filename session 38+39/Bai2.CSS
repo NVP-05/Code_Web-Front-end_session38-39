@@ -1,0 +1,35 @@
+.search-container {
+    width: 40px;
+    height: 30px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 5px;
+    transition: width 0.3s ease;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.search-container:hover {
+    width: 300px;
+}
+
+#searchInput {
+    width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    transition: width 0.3s ease;
+}
+
+.search-container:hover #searchInput {
+    width: calc(100% - 30px);
+    padding: 0 5px;
+}
+
+.search-icon {
+    cursor: pointer;
+    margin-right: 5px;
+}
